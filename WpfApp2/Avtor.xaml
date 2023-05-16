@@ -1,0 +1,38 @@
+﻿<Page x:Class="WpfApp2.Avtor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Avtor">
+
+    <Border Background="#FF86B3FF" CornerRadius="30">
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF60ABD6" Offset="0.23"/>
+                    <GradientStop Color="#FF9C6B6B" Offset="0.809"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="306,147,0,0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF57C6F7" Offset="0"/>
+                        <GradientStop Color="#7FF78F8F" Offset="0.778"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <TextBlock Text="Авторизация" TextAlignment="Center" FontSize="20"/>
+                <Label Content ="введите логин:" Width ="200" Height ="24" />
+                <TextBox Name="TxbLogin" Height="24" />
+                <Label Content ="введите пароль: " Width ="200" Height= "24"/>
+                <PasswordBox Name="TxbPassword" Height="24" />
+                <Separator Opacity="0" Height="10"/>
+                <Button Name="enter" Content="Вход" Width="100" Click ="BtnSignIn_Click" RenderTransformOrigin="0.521,0.376"/>
+                <Separator Opacity="0" Height="10"/>
+                <Button Name="Registration" Content="Регистрация" Width="100" Click="Click2" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Page>
